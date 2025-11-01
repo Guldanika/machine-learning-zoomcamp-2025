@@ -1,0 +1,25 @@
+In this project, we continued the churn prediction model from Chapter 3 of ML Zoomcamp 2025. The focus of this session was deploying the model so it can be used without running the training code every time.
+
+Here’s what was done in this homework:
+
+Churn Prediction Model
+
+The model was trained and evaluated in a Google Colab notebook.
+
+Model Deployment
+
+A FastAPI application was created to serve the model through an API.
+
+The trained model (model.pkl) is loaded in the API, and predictions can be made via endpoints.
+
+Using the Model on Other Machines
+
+The project was containerized using Docker and pushed to Docker Hub.
+
+This allows anyone to pull the Docker image and run the container without needing Colab or the original code.
+
+API Endpoints
+
+Endpoints such as /predict were implemented to receive input data and return predictions.
+
+✅ Summary: The churn model is fully deployable and can be used on any machine through the API or Docker container, making it reproducible and ready for practical use.
